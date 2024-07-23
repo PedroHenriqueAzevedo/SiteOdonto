@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultório Odontológico - Início</title>
+    <link rel="stylesheet" href="arquivos.css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="images/logoooo.ico" type="image/x-icon">
+    <script src="arquivos.js/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <img src="images/logo2.png" alt="Logo do Consultório Odontológico" class="logo">
+            <h1>Consultório Odontológico</h1>
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <button class="close-menu" id="close-menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                <li><a href="servicos.html"><i class="fas fa-tooth"></i> Serviços</a></li>
+                <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section id="home" class="hero">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/1.jpg" alt="Limpeza Dental">
+                    <p>A limpeza dental é essencial para a saúde bucal.</p>
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/2.jpg" alt="Ortodontia">
+                    <p>A ortodontia corrige irregularidades dentárias.</p>
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/3.jpg" alt="Implantes Dentários">
+                    <p>Os implantes são uma solução durável.</p>
+                </div>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+        <div class="section-divider"></div>
+        <section id="about">
+            <div class="container">
+                <h2>Sobre a Odontologia</h2>
+                <div class="content">
+                    <img src="images/dentista.jpg" alt="Dentista em ação" class="service-image">
+                    <p>A odontologia é a área da saúde que cuida da prevenção, diagnóstico e tratamento das doenças relacionadas aos dentes, boca e gengivas.</p>
+                </div>
+            </div>
+        </section>
+        <div class="section-divider"></div>
+        <section class="testimonials">
+            <h2>Depoimentos</h2>
+            <div class="testimonial-slideshow-container">
+                <div class="testimonialSlides fade">
+                    <div class="testimonial-content">
+                        <p>"Ótimo atendimento, minha saúde bucal melhorou muito!"</p>
+                        <div class="testimonial-author">
+                            <strong>Jose Da Silva</strong>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonialSlides fade">
+                    <div class="testimonial-content">
+                        <p>"Profissionais super competentes e atenciosos!"</p>
+                        <div class="testimonial-author">
+                            <strong>Anthony</strong>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonialSlides fade">
+                    <div class="testimonial-content">
+                        <p>"Excelentes profissionais, sempre me sinto bem acolhido!"</p>
+                        <div class="testimonial-author">
+                            <strong>Ana Lima</strong>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonialSlides fade">
+                    <div class="testimonial-content">
+                        <p>"Atendimento de primeira e resultados excelentes!"</p>
+                        <div class="testimonial-author">
+                            <strong>Pedro Santos</strong>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonialSlides fade">
+                    <div class="testimonial-content">
+                        <p>"Melhor clínica que já frequentei, recomendo a todos!"</p>
+                        <div class="testimonial-author">
+                            <strong>Maria Oliveira</strong>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonialSlides fade">
+                    <div class="testimonial-content">
+                        <p>"A equipe é muito profissional e cuidadosa com os pacientes!"</p>
+                        <div class="testimonial-author">
+                            <strong>Roberto Costa</strong>
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="testimonial-dots">
+                    <span class="testimonial-dot" onclick="currentTestimonialSlide(1)"></span>
+                    <span class="testimonial-dot" onclick="currentTestimonialSlide(2)"></span>
+                    <span class="testimonial-dot" onclick="currentTestimonialSlide(3)"></span>
+                    <span class="testimonial-dot" onclick="currentTestimonialSlide(4)"></span>
+                    <span class="testimonial-dot" onclick="currentTestimonialSlide(5)"></span>
+                    <span class="testimonial-dot" onclick="currentTestimonialSlide(6)"></span>
+                </div>
+            </div>
+        </section>
+        
+        <div class="section-divider"></div>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Bem-vindo ao Consultório Odontológico</h2>
+                <a href="https://wa.me/5562993041755?text=quero+marcar+uma+consulta" class="button">Marcar Consulta</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://wa.me/5562993041755" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/phazevedo00" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.google.com/maps/place/Av.+Anhanguera" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+            </div>
+            <h3>© 2024 Clínica Odontológica. Todos os direitos reservados.</h3>
+        </div>
+    </footer>
+    <script src="arquivos.js/slideshow.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Consultório Odontológico</title>
+    <link rel="stylesheet" href="arquivos.css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="images/logoooo.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <img src="images/logo2.png" alt="Logo do Consultório Odontológico" class="logo">
+            <h1>Consultório Odontológico</h1>
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <button class="close-menu" id="close-menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                <li><a href="servicos.html"><i class="fas fa-tooth"></i> Serviços</a></li>
+                <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section id="home" class="hero">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/dentista.jpg" alt="Limpeza Dental">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/limpeza.jpg" alt="Ortodontia">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/implante.jpg" alt="Implantes Dentários">
+                </div>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+       
+            <h3>Bem-vindo ao Consultório do Dr. [Nome do Dentista]</h3>
+            <p>Aqui no consultório do Dr. [Nome do Dentista], nos dedicamos a oferecer cuidados odontológicos especializados com um toque pessoal. Nosso objetivo é garantir que você receba o melhor tratamento em um ambiente acolhedor e confortável.</p>
+            <h3>Especialidades:</h3>
+            <p><strong>Ortopedia Dentofacial:</strong> Tratamentos focados na correção de problemas relacionados ao crescimento e desenvolvimento dos ossos faciais e mandíbulas. A ortopedia dentofacial busca melhorar a função e a estética, prevenindo problemas futuros e promovendo uma estrutura facial equilibrada.</p>
+            <p><strong>Ortodontia:</strong> Soluções avançadas para alinhar os dentes e corrigir problemas de mordida. A ortodontia não só melhora a estética do sorriso, mas também contribui para a saúde bucal geral e a funcionalidade.</p>
+            <h3>Por Que Escolher o Dr. [Nome do Dentista]?</h3>
+            <p><strong>Experiência e Qualificação:</strong>Com ampla experiência e especialização em ortopedia e ortodontia, o Dr. [Nome do Dentista] oferece cuidados de alta qualidade e personalizados.</p>
+            <p><strong>Tecnologia Moderna:</strong> Utilizamos as mais recentes técnicas e equipamentos para garantir tratamentos precisos e confortáveis.</p>
+            <p><strong>Atendimento Personalizado:</strong> Cada paciente é único, e adaptamos nossos tratamentos para atender às suas necessidades específicas.</p>
+            <p><strong>Ambiente Agradável:</strong> Criamos um espaço que combina profissionalismo e conforto, tornando sua visita mais agradável.</p>
+            <p>Agende Sua Consulta: Para obter mais informações ou marcar sua consulta, clique no botão abaixo. Estamos ansiosos para ajudá-lo a alcançar um sorriso saudável e harmonioso!</p>
+            <a href="https://wa.me/5562993041755?text=quero+marcar+uma+consulta" class="button">Marcar Consulta</a>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://wa.me/5562993041755?text=quero+marcar+uma+consulta" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/phazevedo00" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.google.com/maps/place/Av.+Anhanguera+-+Jardim+Novo+Mundo,+Goiânia+-+GO,+74705-015" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+            </div>
+            <br><h3>© 2024 Consultório Odontológico. Todos os direitos reservados.</h3>
+        </div>
+    </footer>
+    <script src="arquivos.js/menu.js"></script>
+    <script src="arquivos.js/slideshow.js"></script>
+</body>
+</html>
