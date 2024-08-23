@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Consultório Odontológico</title>
+    <title>Consultório Odontológico - Sobre</title>
     <link rel="stylesheet" href="arquivos.css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" href="images/logoooo.ico" type="image/x-icon">
+    <script src="arquivos.js/menu.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 </head>
 <body>
     <header>
@@ -33,12 +35,21 @@
         </nav>
     </div>
     <main>
-        <section id="about">
-            <div class="container">
-                <h2>Sobre a Odontologia</h2>
-                <div class="content">
-                    <img src="images/dentista.jpg" alt="Dentista em ação" class="service-image">
-                    <h3>Bem-vindo ao Consultório do Dr. [Nome do Dentista]</h3>
+        <section id="home" class="hero">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/dentista.jpg" alt="Limpeza Dental">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/dentista.jpg" alt="Ortodontia">
+                </div>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    
+                </div>
+            </div>
+            <h3>Bem-vindo ao Consultório do Dr. [Nome do Dentista]</h3>
             <p>Aqui no consultório do Dr. [Nome do Dentista], nos dedicamos a oferecer cuidados odontológicos especializados com um toque pessoal. Nosso objetivo é garantir que você receba o melhor tratamento em um ambiente acolhedor e confortável.</p>
             <h3>Especialidades:</h3>
             <p><strong>Ortopedia Dentofacial:</strong> Tratamentos focados na correção de problemas relacionados ao crescimento e desenvolvimento dos ossos faciais e mandíbulas. A ortopedia dentofacial busca melhorar a função e a estética, prevenindo problemas futuros e promovendo uma estrutura facial equilibrada.</p>
@@ -50,21 +61,19 @@
             <p><strong>Ambiente Agradável:</strong> Criamos um espaço que combina profissionalismo e conforto, tornando sua visita mais agradável.</p>
             <p>Agende Sua Consulta: Para obter mais informações ou marcar sua consulta, clique no botão abaixo. Estamos ansiosos para ajudá-lo a alcançar um sorriso saudável e harmonioso!</p>
             <a href="https://wa.me/5562993041755?text=quero+marcar+uma+consulta" class="button">Marcar Consulta</a> 
-        </div>
-            </div>
         </section>
+        <div class="section-divider"></div>
     </main>
     <footer>
         <div class="container">
             <div class="social-icons">
-                <a href="https://wa.me/5562993041755?text=quero+marcar+uma+consulta" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/phazevedo00" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.google.com/maps/place/Av.+Anhanguera+-+Jardim+Novo+Mundo,+Goiânia+-+GO,+74705-015" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                <a href="https://wa.me/5562993041755" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.google.com/maps/place/Av.+Anhanguera" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
             </div>
-            <br><h3>© 2024 Consultório Odontológico. Todos os direitos reservados.</h3>
+            <h3>© 2024 Clínica Odontológica. Todos os direitos reservados.</h3>
         </div>
     </footer>
-    <script src="arquivos.js/menu.js"></script>
-    <script src="arquivos.js/slideshow.js"></script>
+    <script src="arquivos.js/slideshow.js" defer></script>
 </body>
 </html>
