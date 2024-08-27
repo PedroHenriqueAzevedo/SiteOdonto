@@ -32,6 +32,9 @@ a {
     margin: 0 auto;
     padding: 20px;
 }
+.contact-banner p {
+    text-align: center;
+}
 
 header {
     background-color: var(--primary-color);
@@ -145,6 +148,7 @@ main {
     text-align: center;
     position: relative;
     cursor: pointer; /* Indica que o card é clicável */
+    
 }
 
 .card::before {
@@ -179,6 +183,8 @@ main {
     font-size: 1em;
     color: #555;
     margin-bottom: 20px;
+    font-family: 'Roboto';
+    text-align: center;
 }
 
 .card a {
@@ -198,7 +204,8 @@ main {
     transform: scale(1.05);
 }
 
-.slideshow-container {
+.slideshow-container,.slideshow-container2 {
+    
     position: relative;
     width: 100%;
     max-width: 100%;
@@ -206,26 +213,28 @@ main {
     border-radius: var(--border-radius);
 }
 
-.mySlides {
+.mySlides, .mySlides2{
     display: none;
     position: relative;
     width: 100%;
 }
 
-.mySlides img {
+.mySlides img , .mySlides2 img {
     width: 100%;
     height: auto;
     max-height: 500px;
     object-fit: cover;
     border-radius: var(--border-radius);
 }
-
-.dots {
+.mySlides p,.mySlides2 {
+    text-align: center;
+}
+.dots,.dots2 {
     text-align: center;
     padding: 10px 0;
 }
 
-.dot {
+.dot ,.dot2{
     height: 12px;
     width: 12px;
     margin: 0 4px;
@@ -235,7 +244,7 @@ main {
     transition: background-color 0.6s ease;
 }
 
-.dot.active {
+.dot.active,.dot2.active {
     background-color: var(--secondary-color);
 }
 
@@ -261,6 +270,13 @@ main {
     text-align: center;
     overflow: hidden;
     margin: 0 auto;
+    
+}
+.testimonialSlides p  {
+   
+    text-align: center;
+    
+    
 }
 
 .testimonial-dots {
@@ -320,12 +336,16 @@ section h3 {
 }
 
 section p {
+   
+    text-align: justify;
     margin: 0 auto 30px;
     max-width: 800px;
     font-size: 1.5em;
     color: #555;
 }
-
+p{
+    text-align: left;
+}
 .service-image {
     width: 100%;
     max-height: 500px;
@@ -404,6 +424,11 @@ footer h3 {
     background-color: rgba(0, 0, 0, 0.4); 
     padding-top: 60px;
 }
+.quadro p {
+    text-align: justify;
+    
+
+}
 
 .modal-content {
     background-color: #fff;
@@ -475,4 +500,35 @@ footer h3 {
         height: auto;
         max-height: 300px;
     }
+}
+.hidden {
+    display: none;
+}
+
+.toggle-text {
+    display: block;
+    margin-top: 10px;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.toggle-text:hover {
+    text-decoration: underline;
+}
+
+#show-more {
+    display: block;
+}
+
+#show-less {
+    display: none;
+}
+
+#more-text:not(.hidden) ~ #show-more {
+    display: none;
+}
+
+#more-text.hidden ~ #show-less {
+    display: none;
 }

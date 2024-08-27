@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="arquivos.css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="images/logoooo.ico" type="image/x-icon">
     <script src="arquivos.js/menu.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
@@ -35,34 +36,41 @@
         </nav>
     </div>
     <main>
-        <section id="home" class="hero">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
+        <section id="additional-slideshow" class="hero">
+            <div class="slideshow-container2">
+                <div class="mySlides2 fade">
                     <img src="images/dentista.jpg" alt="Limpeza Dental">
                 </div>
-                <div class="mySlides fade">
+                <div class="mySlides2 fade">
                     <img src="images/dentista.jpg" alt="Ortodontia">
                 </div>
-                <div class="dots">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
+                <div class="dots2">
+                    <span class="dot2" onclick="currentSlide2(1)"></span>
+                    <span class="dot2" onclick="currentSlide2(2)"></span>
                     
                 </div>
             </div>
-            <h3>Bem-vindo ao Consultório do Dr. [Nome do Dentista]</h3>
-            <p>Aqui no consultório do Dr. [Nome do Dentista], nos dedicamos a oferecer cuidados odontológicos especializados com um toque pessoal. Nosso objetivo é garantir que você receba o melhor tratamento em um ambiente acolhedor e confortável.</p>
-            <h3>Especialidades:</h3>
-            <p><strong>Ortopedia Dentofacial:</strong> Tratamentos focados na correção de problemas relacionados ao crescimento e desenvolvimento dos ossos faciais e mandíbulas. A ortopedia dentofacial busca melhorar a função e a estética, prevenindo problemas futuros e promovendo uma estrutura facial equilibrada.</p>
-            <p><strong>Ortodontia:</strong> Soluções avançadas para alinhar os dentes e corrigir problemas de mordida. A ortodontia não só melhora a estética do sorriso, mas também contribui para a saúde bucal geral e a funcionalidade.</p>
-            <h3>Por Que Escolher o Dr. [Nome do Dentista]?</h3>
-            <p><strong>Experiência e Qualificação:</strong>Com ampla experiência e especialização em ortopedia e ortodontia, o Dr. [Nome do Dentista] oferece cuidados de alta qualidade e personalizados.</p>
-            <p><strong>Tecnologia Moderna:</strong> Utilizamos as mais recentes técnicas e equipamentos para garantir tratamentos precisos e confortáveis.</p>
-            <p><strong>Atendimento Personalizado:</strong> Cada paciente é único, e adaptamos nossos tratamentos para atender às suas necessidades específicas.</p>
-            <p><strong>Ambiente Agradável:</strong> Criamos um espaço que combina profissionalismo e conforto, tornando sua visita mais agradável.</p>
-            <p>Agende Sua Consulta: Para obter mais informações ou marcar sua consulta, clique no botão abaixo. Estamos ansiosos para ajudá-lo a alcançar um sorriso saudável e harmonioso!</p>
-            <a href="https://wa.me/5562993041755?text=quero+marcar+uma+consulta" class="button">Marcar Consulta</a> 
+            <div class="farm-details">
+                <h3>Bem-vindo ao Consultório do Dr. [Nome do Dentista]</h3>
+                <p>🦷 Dr. [Nome do Dentista] é um profissional altamente qualificado, especializado em ortodontia e ortopedia dentofacial, com mais de 15 anos de experiência no mercado. Com uma paixão por transformar sorrisos, ele se dedica a proporcionar cuidados odontológicos de excelência, utilizando as mais modernas tecnologias e técnicas disponíveis.</p>
+                <p>🦷 Reconhecido por seu atendimento personalizado, o Dr. [Nome do Dentista] acredita que cada paciente é único e merece um tratamento adaptado às suas necessidades específicas. Ele trabalha para garantir que todos se sintam confortáveis e confiantes ao longo de todo o processo.</p>
+                <p>🦷 O consultório é equipado com o que há de mais moderno, proporcionando um ambiente acolhedor e profissional, onde o bem-estar e a saúde bucal dos pacientes são sempre a prioridade.</p>
+                <p id="more-text" class="hidden">
+                    🦷 Além de sua expertise clínica, o Dr. [Nome do Dentista] está constantemente se atualizando em cursos e congressos, assegurando que seus pacientes tenham acesso aos melhores tratamentos disponíveis.<br>
+                    🦷 Seja para corrigir problemas ortodônticos ou melhorar a estética do sorriso, o Dr. [Nome do Dentista] oferece soluções eficazes e seguras, sempre com foco em resultados duradouros e na satisfação do paciente.<br>
+                    🦷 Agende uma consulta para descobrir como o Dr. [Nome do Dentista] pode ajudar você a alcançar o sorriso dos seus sonhos, com toda a segurança e cuidado que você merece.<br>
+                </p>
+                <span id="show-more" class="toggle-text">
+                    <i class="fas fa-chevron-down"></i> Mostrar Mais<p></p>
+                </span>
+                <span id="show-less" class="toggle-text hidden">
+                    <i class="fas fa-chevron-up"></i> Mostrar Menos<p></p>
+                </span>
+                <a href="https://wa.me/5563992313296?text=Olá%20quero%20saber%20mais%20informações%20sobre%20o%20consultório%20do%20Dr.%20[Nome%20do%20Dentista]" class="button">Mais Informações</a>
+            </div>
+            
+            
         </section>
-        <div class="section-divider"></div>
     </main>
     <footer>
         <div class="container">
@@ -74,6 +82,7 @@
             <h3>© 2024 Clínica Odontológica. Todos os direitos reservados.</h3>
         </div>
     </footer>
-    <script src="arquivos.js/slideshow.js" defer></script>
+    <script src="arquivos.js/slideshow2.js" defer></script>
+    <script src="arquivos.js/vermais.js" defer></script>
 </body>
 </html>
